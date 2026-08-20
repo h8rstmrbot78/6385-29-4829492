@@ -473,7 +473,7 @@ async def deobfuscate_cmd(ctx):
         )
 
 
-@bot.slash_command(name="deobfuscate", description="Deobfuscate attached Lua/Txt file")
+@@bot.tree.command(name="deobfuscate", description="Deobfuscate attached Lua/Txt file")
 async def deobfuscate_slash(interaction: discord.Interaction, file: discord.Attachment):
     """Slash command alternative"""
 
